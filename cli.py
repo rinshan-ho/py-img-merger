@@ -4,9 +4,10 @@ import sys
 import configparser
 
 dir = os.path.dirname(sys.argv[0])
-config_path = dir + '\\config.ini'
+# config_path = dir + '\\config.ini'
 config_ini = configparser.ConfigParser()
-config_ini.read(config_path, encoding = 'utf-8')
+# config_ini.read(config_path, encoding = 'utf-8')
+config_ini.read('config.ini', encoding = 'utf-8')
 
 DEFAULT_NAME = config_ini.get('DEFAULT', 'name')
 DEFAULT_EXT = config_ini.get('DEFAULT', 'ext')
