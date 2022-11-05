@@ -4,10 +4,10 @@ import sys
 import configparser
 
 dir = os.path.dirname(sys.argv[0])
-# config_path = dir + '\\config.ini'
+config_path = dir + '\\config.ini'
 config_ini = configparser.ConfigParser()
-# config_ini.read(config_path, encoding = 'utf-8')
-config_ini.read('config.ini', encoding = 'utf-8')
+config_ini.read(config_path, encoding = 'utf-8')
+# config_ini.read('config.ini', encoding = 'utf-8')
 
 DEFAULT_NAME = config_ini.get('DEFAULT', 'name')
 DEFAULT_EXT = config_ini.get('DEFAULT', 'ext')
@@ -54,7 +54,7 @@ if(imgs!=[]):
 
     name = input('結合した画像の名前を入力してください\n(デフォルトは"merged"です)\n>> ')
     ext = input('拡張子を入力してください\n(デフォルトは".png"です)\n>> .')
-    method = input('結合方法を選択してください(縦:0, 横:1)\n(デフォルトは"0"です)\n>> ')
+    method = input('結合方式を選択してください(縦:0, 横:1)\n(デフォルトは"1"です)\n>> ')
     scaling = input('結合基準を選択してください(最小px:0, 最大px:1)\n(デフォルトは"0"です)\n>> ')
 
 
