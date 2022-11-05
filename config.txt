@@ -1,2 +1,0 @@
-<path>
-C:\Programs\py-img-merging\output
