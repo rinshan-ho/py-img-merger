@@ -54,10 +54,10 @@ if(imgs!=[]):
     for i, img in enumerate(imgs):
         imgs[i] = cv2.imread(img)
 
-    name = input(f'結合した画像の名前を入力してください\n(デフォルトは"{DEFAULT_NAME}"です)\n>> ')
+    name = input(f'連結した画像の名前を入力してください\n(デフォルトは"{DEFAULT_NAME}"です)\n>> ')
     ext = input(f'拡張子を入力してください\n(デフォルトは".{DEFAULT_EXT}"です)\n>> .')
-    method = input(f'結合方式を選択してください(横:0, 縦:1)\n(デフォルトは"{DEFAULT_METHOD}"です)\n>> ')
-    scaling = input(f'結合基準を選択してください(最小px:0, 最大px:1)\n(デフォルトは"{DEFAULT_SCALING}"です)\n>> ')
+    method = input(f'連結方式を選択してください(横:0, 縦:1)\n(デフォルトは"{DEFAULT_METHOD}"です)\n>> ')
+    scaling = input(f'連結基準を選択してください(最小px:0, 最大px:1)\n(デフォルトは"{DEFAULT_SCALING}"です)\n>> ')
 
 
     #DEFAULT値の設定
