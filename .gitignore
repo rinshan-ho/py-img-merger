@@ -1,0 +1,5 @@
+.git
+.venv
+run.bat
+img[A-Z].*
+output
