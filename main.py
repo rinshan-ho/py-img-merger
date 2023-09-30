@@ -12,7 +12,6 @@ DEFAULT_EXT = config_ini.get('DEFAULT', 'ext')
 DEFAULT_METHOD = config_ini.get('DEFAULT', 'method')
 DEFAULT_SCALING = config_ini.get('DEFAULT' ,'scaling')
 OUTPUT_PATH = config_ini.get('DEFAULT', 'path')
-print(OUTPUT_PATH)
 
 def hconcat(img_list, scaling):
     if(scaling=='0'):
